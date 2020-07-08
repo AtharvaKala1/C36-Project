@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDlDlmCOq4_LSNmh-9TnKhPsL3JCdkxcmA",
+        authDomain: "c34-project-of-whitehat.firebaseapp.com",
+        databaseURL: "https://c34-project-of-whitehat.firebaseio.com",
+        projectId: "c34-project-of-whitehat",
+        storageBucket: "c34-project-of-whitehat.appspot.com",
+        messagingSenderId: "344694794163",
+        appId: "1:344694794163:web:be3ba45c4dbe1a2ff44dc6"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+    
+    <div id ="canvascontainer">
+      <script src="sketch.js"></script>
+    </div>
+
+      <p>
+        <button id ="saveButton">save</button>
+        </p>
+
+        <p>
+          <ol id ="drawingList">
+
+          </ol>
+      
+  </body>
+</html>
+    
